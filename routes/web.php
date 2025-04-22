@@ -1,6 +1,8 @@
+
 <?php
 
 use App\Http\Controllers\CompotitionController;
+use App\Http\Controllers\GameController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,3 +13,4 @@ Route::get('/', function () {
 
 
 Route::resource('compotition', CompotitionController::class);
+Route::resource('game', GameController::class);
